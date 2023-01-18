@@ -15,10 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from projects import views as projectsViews
+from projects import views as projectssViews
+from services import views as servicesViews
+from services import views as servicessViews
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('homepage.urls')),
-    path('projects/',include('projects.urls')),
-    path('services/',include('services.urls')),
+    #path('',include('homepage.urls')),
+    path('projects/',projectssViews.projectss),
+    path('services/',servicessViews.servicess),
+    path('projects/<int:a>', projectsViews.projects, name="projects"),
+    path('services/<str:slug_url>',servicesViews.services,),
+    
+    
 ]
