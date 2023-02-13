@@ -15,17 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 from projects import views as projectsViews
 from projects import views as projectssViews
 from services import views as servicesViews
 from services import views as servicessViews
+from services import views as apiViews
 urlpatterns = [
+    path('summernote/', include('django_summernote.urls')),
     path('admin/', admin.site.urls),
-    #path('',include('homepage.urls')),
-    path('projects/',projectssViews.projectss),
-    path('services/',servicessViews.servicess),
-    path('projects/<int:a>', projectsViews.projects, name="projects"),
-    path('services/<str:slug_url>',servicesViews.services,),
-    
-    
-]
+    path('',include('homepage.urls')),
+    path('about/',include('about.urls')),
+    #path('projects/',projectssViews.projectss),
+    path('services/',include('services.urls')),
+    #path('projects/<int:a>', projectsViews.projects, name="projects"),
+    #path('services/<str:slug_url>',servicesViews.services,),
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
