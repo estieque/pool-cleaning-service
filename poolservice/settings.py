@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'services.apps.ServicesConfig',
     'projects.apps.ProjectsConfig',
     'about.apps.AboutConfig',
+    'settings.apps.SettingsConfig',
     'SubsEmail',
     'django_summernote',
 ]
