@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 
-FUNCTIONS OF POOL CLEANIG SERVICE WEBSITE
-=======
 # FUNCTIONS OF POOL CLEANIG SERVICE WEBSITE
->>>>>>> 36f999c6bf65f2847687020c0128845adbb0bff5
 
 👥 User Registration: Allow users to create an account and save their personal information such as name, address, and payment information.
 
@@ -29,8 +25,4 @@ TOOLS I USED
 
 💻 I used Visual Studio Code to build a website, and used 
 
-<<<<<<< HEAD
 🐧 Git Bash as my command line interface for version control.
-=======
-🐧 Git Bash as my command line interface for version control.
->>>>>>> 36f999c6bf65f2847687020c0128845adbb0bff5
