@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('homepage.urls')),
     path('about/',include('about.urls')),
+    path('contact/',include('contact.urls')),
     #path('projects/',projectssViews.projectss),
     path('services/',include('services.urls')),
     #path('projects/<int:a>', projectsViews.projects, name="projects"),
