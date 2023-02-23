@@ -27,10 +27,6 @@ FUNCTIONS OF POOL CLEANIG SERVICE WEBSITE
 
 TOOLS I USED
 
-💻 I used Visual Studio Code to build a website, and used 
+💻 I used Visual Studio Code to build a website and used 
 
-<<<<<<< HEAD
-🐧 Git Bash as my command line interface for version control.
-=======
-🐧 Git Bash as my command line interface for version control.
->>>>>>> 36f999c6bf65f2847687020c0128845adbb0bff5
+🐧 Git Bash as my command line interface for version control
