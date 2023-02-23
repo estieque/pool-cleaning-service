@@ -1,21 +1,32 @@
 import turtle
+import random
 
-turtle.speed(1)
-turtle.bgcolor("black")
-turtle.pensize(3)
-def func():
-    for i in range(200):
-        turtle.right(1)
-        turtle.forward(1)
-        
-turtle.color('red','pink')
-turtle.begin_fill()
-turtle.left(140)
-turtle.forward(111.65)
-func()
-turtle.left(120)
-func()
-turtle.forward(111.65)
-turtle.end_fill()
-turtle.hideturtle()
+def tree(branch_len, pen):
+    if branch_len > 5:
+        pen.forward(branch_len)
+        angle = random.randint(10, 60)
+        pen.right(angle)
+        tree(branch_len-15, pen)
+        pen.left(2*angle)
+        tree(branch_len-15, pen)
+        pen.right(angle)
+        pen.backward(branch_len)
+
+def grow_tree(x, y):
+    pen.up()
+    pen.goto(x, y)
+    pen.down()
+    pen.setheading(90)
+    pen.color('blue')
+    tree(100, pen)
+
+pen = turtle.Turtle()
+pen.speed('fastest')
+pen.left(90)
+pen.up()
+pen.backward(200)
+pen.down()
+
+turtle.onscreenclick(grow_tree, 1)
+
 turtle.done()
