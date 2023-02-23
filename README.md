@@ -19,3 +19,9 @@
 👍 Reviews and Ratings: Allow users to leave reviews and ratings for the services they receive and the products they purchase.
 
 🔔 Notifications: Send users notifications about upcoming service appointments, order confirmations, and delivery updates.
+
+TOOLS I USED
+
+💻 I used Visual Studio Code to build a website, and used 
+
+🐧 Git Bash as my command line interface for version control.
